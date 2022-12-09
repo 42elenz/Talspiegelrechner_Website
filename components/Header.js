@@ -8,6 +8,7 @@ import {
     NavItem,
     NavLink,
 } from 'reactstrap';
+import {isMobile} from 'react-device-detect';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +38,7 @@ const Header = () => {
                             <NavLink href="/">Home</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#feature">Funktionsweise</NavLink>
+							{isMobile ?  <NavLink href="#mobilefeature">Funktionsweise</NavLink> : <NavLink href="#feature">Funktionsweise</NavLink>}
                         </NavItem>
                         <NavItem>
                             <NavLink href="#service">Formel</NavLink>
