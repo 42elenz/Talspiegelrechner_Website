@@ -6,8 +6,8 @@ const FeatureBox = (props) => {
 	const isMobile = router.query.mobile;
   return (
     <>
-    {
-	!isMobile &&
+	{
+	!isMobile ?
 	(
       props.features.map((feature, key) =>
       (feature.id % 2 !== 0) ?
@@ -44,9 +44,9 @@ const FeatureBox = (props) => {
           </div>
         </Col>
       </Row>
-	  ))
-	}
-	{isMobile &&
+	  )
+	  )
+	:
         (props.features.map((feature, key) => (
           <Row key={key} className={feature.id === 1 ? "align-items-center" : "align-items-center mt-5"}>
             <Col md={5} >
