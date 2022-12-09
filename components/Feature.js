@@ -1,32 +1,46 @@
 import React from 'react';
 import { Container, Row, Col } from "reactstrap";
-
 const FeatureBox = (props) => {
-  const isMobile = window.innerWidth <= 600; // check if the device is a smartphone or tablet
-
   return (
     <>
-      {
-        props.features.map((feature, key) =>
-          <Row key={key} className="align-items-center mt-5">
-            <Col md={6}>
-              <div>
-                <img src={feature.img} alt="" className="img-fluid d-block mx-auto" width='350px'/>
+    {
+      props.features.map((feature, key) =>
+      (feature.id % 2 !== 0) ?
+        <Row key={key} className={feature.id === 1 ? "align-items-center" : "align-items-center mt-5"}>
+          <Col md={5} >
+            <div>
+              <img src={feature.img} alt="" className="img-fluid d-block mx-auto" width="350px"/>
+            </div>
+          </Col>
+            <Col md={{size:6, offset:1}}>
+              <div className="mt-5 mt-sm-0 mb-4">
+                <div className="my-4">
+                  <i className={feature.icon}></i>
+                </div>
+                <h5 className="text-dark font-weight-normal mb-3 pt-3">{feature.title}</h5>
+                <p className="text-muted mb-3 f-15">{feature.desc}</p>
               </div>
             </Col>
-            {
-              !isMobile && ( // only render the title and description if the device is not a smartphone or tablet
-                <Col md={{size:5, offset:1}} className="mt-5 mt-sm-0">
-                  <div>
-                    <h5 className="text-dark font-weight-normal mb-3 pt-3">{feature.title}</h5>
-                    <p className="text-muted mb-3 f-15">{feature.desc}</p>
-                  </div>
-                </Col>
-              )
-            }
-          </Row>
-        )
-      }
+        </Row>
+      :
+      <Row key={key} className="align-items-center mt-5">
+        <Col md={6}>
+          <div className="mb-4">
+            <div className="my-4">
+              <i className="mdi mdi-account-group"></i>
+            </div>
+            <h5 className="text-dark font-weight-normal mb-3 pt-3">{feature.title}</h5>
+            <p className="text-muted mb-3 f-15">{feature.desc}</p>
+          </div>
+        </Col>
+        <Col md={{size:5, offset:1}} className="mt-5 mt-sm-0">
+          <div>
+            <img src={feature.img} alt="" className="img-fluid d-block mx-auto" width='350px'/>
+          </div>
+        </Col>
+      </Row>
+      )
+    }
     </>
   );
 }
@@ -34,9 +48,9 @@ const FeatureBox = (props) => {
 const Feature = () => {
 const features = [
     {id : 1, img : "/assets/Medikamentwahl.png", title : "Auswahl des Medikaments", desc : "Wählen Sie ein Medikament aus dem Drop-Down Menu, oder geben Sie die Werte einfach selber ein"},
-    {id : 4, img : "/assets/Hwz.png", title : "Halbwertszeit", desc : "Wählen Sie Halbwertszeit in Stunden aus oder nutzen Sie automatische Befüllung"},
+    {id : 1, img : "/assets/Hwz.png", title : "Halbwertszeit", desc : "Wählen Sie Halbwertszeit in Stunden aus oder nutzen Sie automatische Befüllung"},
     {id : 1, img : "/assets/Verabreichungsintro.png", title : "Verabreichung", desc : "In welchen Abständen verabreichen Sie die Medikation?"},
-	{id : 4, img : "/assets/Konzentration.png", title : "Gemessene Konzentration", desc : "Wie hoch war die Konzentration im Blut ('Spiegel') zum Zeitpunkt der Messung?"},
+	{id : 1, img : "/assets/Konzentration.png", title : "Gemessene Konzentration", desc : "Wie hoch war die Konzentration im Blut ('Spiegel') zum Zeitpunkt der Messung?"},
 	{id : 1, img : "/assets/Zeiten.png", title : "Eintragen der Daten", desc : "Tragen Sie die Zeiten ein. Achten Sie darauf, dass die Chronologie gewahrt bleibt!"}
   ];
 return (
