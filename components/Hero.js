@@ -14,7 +14,7 @@ const Hero = () => {
               <p className="text-uppercase text-primary font-weight-medium f-14 mb-4">Talspiegelrechner</p>
               <h1 className="mb-4 font-weight-normal line-height-1_4">Ermittle den Talspiegel rechnerisch!</h1>
               <p className="text-muted mb-4 pb-2">Haben Sie auch das Problem, dass Sie es nicht immer schaffen den Spiegelkontrolle kurz vor der Medikamentengabe zu bestimmen? Mit dem Talspiegelrechner können Sie einfach den Talspiegel ausrechnen. <br /> <br />
-              <a href="#talspiegel-calculator.vercel.app" className="btn btn-warning btn-lg">
+              <a href="talspiegel-calculator.vercel.app" className="btn btn-warning btn-lg">
                 Lass mich losrechnen <span className="ml-5 right-icon">&#8594;</span>
               </a>
               <br /> <br />
