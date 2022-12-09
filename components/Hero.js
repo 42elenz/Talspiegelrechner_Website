@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import {useRouter} from "next/router";
+import {isMobile} from 'react-device-detect';
 
 const Hero = () => {
 	const router = useRouter();
@@ -27,11 +28,13 @@ const Hero = () => {
 			</p>
             </div>
           </Col>
-          <Col lg={6}>
+		  {!isMobile &&
+          (<Col lg={6}>
             <div className="mt-5 mt-lg-0">
               <img src="/assets/logo.png" alt="" className="img-fluid mx-auto d-block"/>
             </div>
-          </Col>
+          </Col>)
+		}
         </Row>
       </Container>
     </section>

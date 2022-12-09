@@ -38,7 +38,7 @@ const Header = () => {
                             <NavLink href="/">Home</NavLink>
                         </NavItem>
                         <NavItem>
-							{isMobile ?  <NavLink href="#mobilefeature">Funktionsweise</NavLink> : <NavLink href="#feature">Funktionsweise</NavLink>}
+							<NavLink href="#feature">Funktionsweise</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href="#service">Formel</NavLink>
