@@ -42,6 +42,9 @@ const Header = () => {
                         <NavItem>
                             <NavLink href="#service">Formel</NavLink>
                         </NavItem>
+						<NavItem>
+                            <NavLink href="#Datenschutz">Datenschutz</NavLink>
+                        </NavItem>
                         <NavItem>
                             <NavLink href="#about">Kontakt</NavLink>
                         </NavItem>
