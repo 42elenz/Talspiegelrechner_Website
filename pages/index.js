@@ -15,7 +15,7 @@ const Index = () => {
     <Layout pageTitle="Talspiegelrechner">
       <Header />
 	  <Hero />
-	  {isMobile ? <MobileFeature /> : <Feature />}
+	  {!isMobile && <Feature />}
 	  <Service />
 	<Datenschutz />	  
 	  <About />
