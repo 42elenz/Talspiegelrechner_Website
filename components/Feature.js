@@ -2,12 +2,10 @@ import React from 'react';
 import {useRouter} from "next/router";
 import { Container, Row, Col } from "reactstrap";
 const FeatureBox = (props) => {
-	const router = useRouter();
-	const width = router.query.width;
+
   return (
     <>
 	{
-	width > 400 ?
       props.features.map((feature, key) =>
       (feature.id % 2 !== 0) ?
         <Row key={key} className={feature.id === 1 ? "align-items-center" : "align-items-center mt-5"}>
@@ -43,18 +41,6 @@ const FeatureBox = (props) => {
           </div>
         </Col>
       </Row>
-	  )
-	:
-        (props.features.map((feature, key) => (
-          <Row key={key} className={feature.id === 1 ? "align-items-center" : "align-items-center mt-5"}>
-            <Col md={5} >
-              <div>
-                <img src={feature.img} alt="" className="img-fluid d-block mx-auto" width="350px"/>
-              </div>
-            </Col>
-          </Row>
-		)
-		)
 		)
 }
     </>

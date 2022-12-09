@@ -1,7 +1,10 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import {useRouter} from "next/router";
 
 const Hero = () => {
+	const router = useRouter();
+	const width = router.query.width;
   return (
     <section className="section position-relative" style={{ height: '100vh' }}>
       <Container>
@@ -22,7 +25,6 @@ const Hero = () => {
 			  <br /> <br /> 
 			  Für mehr Informationen <u><a href="#feature">lesen Sie weiter</a></u>! 
 			</p>
-			
             </div>
           </Col>
           <Col lg={6}>
@@ -35,5 +37,6 @@ const Hero = () => {
     </section>
   );
 }
+
 
 export default Hero;
