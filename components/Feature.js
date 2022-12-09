@@ -46,29 +46,21 @@ const FeatureBox = (props) => {
       </Row>
 	  )
       )
-	
 	}
 	{
-	isMobile &&
-	(
-	props.features.map((feature, key) =>
-      (feature.id % 2 !== 0) ?
-        <Row key={key} className={feature.id === 1 ? "align-items-center" : "align-items-center mt-5"}>
-          <Col md={5} >
-            <div>
-              <img src={feature.img} alt="" className="img-fluid d-block mx-auto" width="350px"/>
-            </div>
-          </Col>
-        </Row>
-	:
-        <Col md={{size:5, offset:1}} className="mt-5 mt-sm-0">
-          <div>
-            <img src={feature.img} alt="" className="img-fluid d-block mx-auto" width='350px'/>
-          </div>
-        </Col>
+	isMobile && (
+        props.features.map((feature, key) => (
+          <Row key={key} className={feature.id === 1 ? "align-items-center" : "align-items-center mt-5"}>
+            <Col md={5} >
+              <div>
+                <img src={feature.img} alt="" className="img-fluid d-block mx-auto" width="350px"/>
+              </div>
+            </Col>
+          </Row>
+		)
+		)
 	)
-	)
-	}
+		}
     </>
   );
 }
