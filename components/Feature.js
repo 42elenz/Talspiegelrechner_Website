@@ -46,7 +46,7 @@ const FeatureBox = (props) => {
       </Row>
 	  ))
 	}
-	else {
+	{isMobile &&
         props.features.map((feature, key) => (
           <Row key={key} className={feature.id === 1 ? "align-items-center" : "align-items-center mt-5"}>
             <Col md={5} >
