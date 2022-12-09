@@ -3,12 +3,11 @@ import {useRouter} from "next/router";
 import { Container, Row, Col } from "reactstrap";
 const FeatureBox = (props) => {
 	const router = useRouter();
-	const isMobile = router.query.mobile;
+	const width = router.query.width;
   return (
     <>
 	{
-	!isMobile ?
-	(
+	width > 400 ?
       props.features.map((feature, key) =>
       (feature.id % 2 !== 0) ?
         <Row key={key} className={feature.id === 1 ? "align-items-center" : "align-items-center mt-5"}>
@@ -45,7 +44,6 @@ const FeatureBox = (props) => {
         </Col>
       </Row>
 	  )
-	  )
 	:
         (props.features.map((feature, key) => (
           <Row key={key} className={feature.id === 1 ? "align-items-center" : "align-items-center mt-5"}>
@@ -58,7 +56,7 @@ const FeatureBox = (props) => {
 		)
 		)
 		)
-		}
+}
     </>
   );
 }
