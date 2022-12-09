@@ -34,7 +34,7 @@ const FeatureBox = (props) => {
             <div className="my-4">
               <i className="mdi mdi-account-group"></i>
             </div>
-            <h5 className="text-dark font-weight-normal mb-3 pt-3">{feature.title}</h5>
+            <h5 className="text font-weight-normal mb-3 pt-3">{feature.title}</h5>
             <p className="text-muted mb-3 f-15">{feature.desc}</p>
           </div>
         </Col>
@@ -87,7 +87,7 @@ return (
         <Row className="justify-content-center">
           <Col lg={6} md={8}>
             <div className="title text-center mb-5">
-              <h3 className="font-weight-normal text-dark"><span className="text-warning">Funktionsweise</span></h3>
+              <h3 className="font-weight-normal text"><span className="text-warning">Funktionsweise</span></h3>
             </div>
           </Col>
         </Row>
