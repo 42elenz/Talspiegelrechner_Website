@@ -53,10 +53,10 @@ const features = [
     {id : 2, img : "/assets/Hwz.png", title : "Halbwertszeit", desc : "Wählen Sie Halbwertszeit in Stunden aus oder nutzen Sie automatische Befüllung"},
     {id : 1, img : "/assets/Verabreichungsintro.png", title : "Verabreichung", desc : "In welchen Abständen verabreichen Sie die Medikation?"},
 	{id : 2, img : "/assets/Konzentration.png", title : "Gemessene Konzentration", desc : "Wie hoch war die Konzentration im Blut ('Spiegel') zum Zeitpunkt der Messung?"},
-	{id : 1, img : "/assets/Zeiten.png", title : "Eintragen der Daten", desc : "Tragen Sie die Zeiten ein. Achten Sie darauf, dass die Chronologie gewahrt bleibt!"}
+	{id : 1, img : "/assets/Zeiten.png", title : "Eintragen der Daten", desc : "Tragen Sie die Zeiten ein. Achten Sie darauf, dass die Chronologie gewahrt bleibt! Nutzen Sie das Mausrad oder Trackpad, wenn Sie den online Rechner nutzen."}
   ];
 return (
-    <section className="section" id="feature">
+    <section className="section" id="funktionsweise">
       <Container>
         <Row className="justify-content-center">
           <Col lg={6} md={8}>

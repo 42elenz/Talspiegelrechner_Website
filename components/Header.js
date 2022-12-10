@@ -38,10 +38,10 @@ const Header = () => {
                             <NavLink href="/">Home</NavLink>
                         </NavItem>
                         <NavItem>
-							<NavLink href="#feature">Funktionsweise</NavLink>
+							<NavLink href="#funktionsweise">Funktionsweise</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#service">Formel</NavLink>
+                            <NavLink href="#formel">Formel</NavLink>
                         </NavItem>
 						<NavItem>
                             <NavLink href="#Datenschutz">Datenschutz</NavLink>

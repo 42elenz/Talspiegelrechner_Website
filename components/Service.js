@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from "reactstrap";
 const Service = () => {
   return (
-    <section className="section" id="service">
+    <section className="section" id="formel">
       <Container>
         <Row className="justify-content-center">
           <Col lg={6} md={8}>
