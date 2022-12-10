@@ -25,7 +25,7 @@ const Hero = () => {
 				  <a href="#">
 				  <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="App Store" width="100" height="30" /></a>
 			  <br /> <br /> 
-			  Für mehr Informationen <u><a href="#feature">lesen Sie weiter</a></u>! 
+			  Für mehr Informationen <u><a href="#funktionsweise">lesen Sie weiter</a></u>! 
 			</p>
             </div>
           </Col>
