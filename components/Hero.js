@@ -22,7 +22,7 @@ const Hero = () => {
               <br /> <br />
               <a href="#">
 				  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" width="100" height="30" /></a>
-				  <a href="#https://play.google.com/store/apps/details?id=de.talspiegelrechner.talspiegelrechner&gl=DE">
+				  <a href="https://play.google.com/store/apps/details?id=de.talspiegelrechner.talspiegelrechner&gl=DE">
 				  <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="App Store" width="100" height="30" /></a>
 			  <br /> <br /> 
 			  Für mehr Informationen <u><a href="#funktionsweise">lesen Sie weiter</a></u>! 
