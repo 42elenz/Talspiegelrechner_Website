@@ -16,7 +16,7 @@ const Hero = () => {
               <h1 className="mb-4 font-weight-normal line-height-1_4">Ermittle den Talspiegel von Medikamenten rechnerisch!</h1>
               <p className="text-muted mb-4 pb-2">Berechnung des Talspiegels mit wenigen Eingaben! Ohne viel Rechnen.
 			  <br/><u>HINWEIS!</u> Es wird keine Gewähr für die Ergebnisse der APP gegeben. Die Verantwortlichkeit liegt beim Nutzer! Nicht zur medizinischen Diagnostik geeignet.<br /> <br />
-              <a href="talspiegel-deploy-326b.vercel.app" className="btn btn-warning btn-lg">
+              <a href="https://talspiegel-deploy-326b.vercel.app" className="btn btn-warning btn-lg">
                 Lass mich losrechnen <span className="ml-5 right-icon">&#8594;</span>
               </a>
               <br /> <br />
